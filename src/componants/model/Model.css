@@ -1,0 +1,170 @@
+.model-continer {
+  background-color: rgba(31, 30, 30, 0.753);
+  width: 100vw;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.model-content {
+  width: 80%;
+  background-color: white;
+  height: 80%;
+  padding: 20px 20px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.model-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: red;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.model-content {
+  display: flex;
+}
+
+.model-content-img {
+  width: 40%;
+  height: 100%;
+}
+.model-content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.model-content-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+.model-content-info-title {
+  font-size: 25px;
+}
+.model-content-info-auther {
+  font-size: 20px;
+}
+.model-content-info-auther b {
+  font-weight: 800;
+  color: red;
+}
+
+.model-content-info-price {
+  font-size: 20px;
+  color: red;
+}
+.model-content-info-price b {
+  color: green;
+}
+
+.model-content-info-price span {
+  font-weight: 800;
+}
+
+.model-add-to-cart {
+  display: flex;
+  gap: 5px;
+}
+.model-add-to-cart-input {
+  border-radius: 10px;
+  border: 1px solid green;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.model-add-to-cart-btn {
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid green;
+  cursor: pointer;
+}
+.model-add-to-cart-btn:hover{
+  background-color: gray;
+}
+
+.model-add-to-cart-btn i {
+  font-size: 20px;
+  color: green;
+}
+
+.model-content-info-link {
+  background-color: blue;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 15px;
+  color: var(--main-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* media */
+
+@media (max-width: 1280px) {
+  .model-content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .model-content-info {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media (max-width: 720px) {
+  .model-content {
+    height: auto;
+    width: 90%;
+  }
+
+  .model-content-info {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .model-content-img {
+    display: none;
+  }
+  .ratings {
+    color: #f4d00a;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0px;
+
+    font-size: 20px;
+  
+  }
+}
+@media (max-width:280px) {
+  .review {
+    color: black;
+    font-size: 12px;
+  }
+ .model-content-info-auther{
+    font-size: 15px;
+ }
+
+ .model-content-info-link{
+    font-size: 15px;
+ }
+}

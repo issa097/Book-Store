@@ -1,0 +1,14 @@
+.ratings {
+  color: #f4d00a;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  padding: 5px;
+
+}
+.review{
+    color: black;
+    font-size: 15px;
+}

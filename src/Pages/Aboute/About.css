@@ -1,0 +1,19 @@
+.about-us{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     padding: 30px;
+     
+     height: calc(100vh - 250px);
+}
+
+.about-title{
+    border-bottom: 3px solid gray;
+    width: max-content;
+    color: gray;
+    font-size: 40px;
+}
+
+.online-book{
+    font-size: 20px;
+}

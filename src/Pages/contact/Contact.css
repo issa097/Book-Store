@@ -1,0 +1,135 @@
+.contact{
+   
+    height: calc(100%);
+    padding: 50px;
+
+}
+
+.contact-wrapper{
+border-bottom: 2px solid gray;
+display: flex;
+justify-content: space-around;
+padding: 10px;
+
+    
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:30%;
+    align-items: center;
+
+}
+
+.contact-item-icon{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: blue;
+    justify-content: center;
+}
+
+.contact-item-text{
+    font-size: 20px;
+}
+
+/* contact */
+
+.contact-form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}
+
+.contact-form-title{
+    text-align: center;
+    padding: 10px;
+}
+.contact-input-wrapper{
+    display: flex;
+    align-items: center;
+   gap: 5px;
+    justify-content:space-between;
+
+}
+.contact-input-wrapper input{
+padding: 8px;
+width: 30%;
+border: 2px solid gray;
+
+
+}
+
+textarea{
+    width: 100%;
+   padding: 10px;
+   resize: none; 
+   border: 2px solid gray;
+}
+
+.contact-form button{
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* midea */
+
+@media (max-width:720px) {
+    .contact{
+        padding: 30px 15px;
+    
+    }
+    .contact-input-wrapper{
+        flex-wrap: wrap;
+    }
+    .contact-input-wrapper input{
+        width: 100%;
+    }
+    .contact-item-icon{
+        font-size: 15px;
+    }
+}
+@media (max-width:520px) {
+    .contact{
+        padding: 30px 15px;
+    
+    }
+    .contact-input-wrapper{
+        flex-wrap: wrap;
+    }
+    .contact-input-wrapper input{
+        width: 100%;
+    }
+    .contact-item-text{
+        font-size: 15px;
+    }
+}
+@media (max-width:280px) {
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .contact-item-text{
+        width: max-content;
+        font-size: 20px;
+    }
+    .contact-item-icon{
+        font-size: 20px;
+    }
+}
